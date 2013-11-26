@@ -320,6 +320,15 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    #controlPanel {
+        background: rgba(255, 255, 255, 0.25);
+        position: fixed;
+        width:auto;
+        height:auto;
+        padding:.2em;
+        color:white;
+        font-weight:bold;
+    }
 }
 
 @media print,
