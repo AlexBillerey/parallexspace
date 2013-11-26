@@ -27,7 +27,114 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow:hidden;
 
+}
+
+@keyframes cloud99 {
+    0% {
+        /*opacity: 0;*/
+        margin-left: -30em;
+        margin-top:-30em;
+        -webkit-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        transform:  scale(0,0);
+    }
+    25% {
+        /*opacity: .25;*/
+        margin-left: 25%;
+        margin-top:-5em;
+        -webkit-transform: scale(.25,.25);
+        -moz-transform: scale(.25,.25);
+        transform:  scale(.25,.25);
+    }
+    50% {
+        /*opacity: .50;*/
+        margin-left: 50%;
+        -webkit-transform: scale(.5,.5);
+        -moz-transform: scale(.5,.5);
+        transform:  scale(1.5,1.5);
+    }
+    75% {
+        /*opacity: .75;*/
+        margin-left: 75%;
+        -webkit-transform: scale(1.75,1.75);
+        -moz-transform: scale(1.75,1.75);
+        transform:  scale(1.75,1.75);
+    }
+
+    100% {
+        /*opacity: 1.0;*/
+        margin-left: 100%;
+        margin-top: 20em;
+        -webkit-transform: scale(2,2);
+        -moz-transform: scale(2,2);
+        transform:  scale(2,2);
+    }
+    }
+
+@-webkit-keyframes cloud99 {
+    0% {
+        /*opacity: 0;*/
+        margin-left: -30em;
+        margin-top:-30em;
+        -webkit-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        transform:  scale(0,0);
+    }
+    25% {
+        /*opacity: .25;*/
+        margin-left: 25%;
+        margin-top:-5em;
+        -webkit-transform: scale(.25,.25);
+        -moz-transform: scale(.25,.25);
+        transform:  scale(.25,.25);
+    }
+    50% {
+        /*opacity: .50;*/
+        margin-left: 50%;
+        -webkit-transform: scale(.5,.5);
+        -moz-transform: scale(.5,.5);
+        transform:  scale(1.5,1.5);
+    }
+    75% {
+        /*opacity: .75;*/
+        margin-left: 75%;
+        -webkit-transform: scale(1.75,1.75);
+        -moz-transform: scale(1.75,1.75);
+        transform:  scale(1.75,1.75);
+    }
+
+    100% {
+        /*opacity: 1.0;*/
+        margin-left: 100%;
+        margin-top: 20em;
+        -webkit-transform: scale(2,2);
+        -moz-transform: scale(2,2);
+        transform:  scale(2,2);
+    }
+    }
+
+#cloud99 {
+    -webkit-animation-name: cloud99;
+    -moz-animation-name: cloud99;
+    -o-animation-name: cloud99;
+    animation-name: cloud99;
+    -webkit-animation-duration: 25s;
+    -moz-animation-duration: 25s;
+    -o-animation-duration: 25s;
+    animation-duration: 25s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /*margin-top: -10em;
+    margin-left:-10em;*/
+    z-index: 2;
 }
 
 /*
@@ -103,22 +210,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -229,13 +320,12 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -268,7 +358,6 @@ textarea {
     /*
      * Don't show links for images, or javascript/internal links
      */
-
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
