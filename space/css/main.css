@@ -325,7 +325,7 @@ textarea {
         position: fixed;
         width:auto;
         height:auto;
-        padding:.2em;
+        padding:.2em .5em;
         color:white;
         font-weight:bold;
     }
