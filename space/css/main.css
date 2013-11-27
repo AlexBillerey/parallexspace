@@ -328,6 +328,7 @@ textarea {
         padding:.2em .5em;
         color:white;
         font-weight:bold;
+        margin:0;
     }
 }
 
