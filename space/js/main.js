@@ -11,7 +11,6 @@ function init() {
 $(init);
 $(document).ready(function(){
     $('#controlPanel').click(function(){
-        //alert('boo');
         var pfx = ["webkit", "moz", "ms", "o", ""];
         function RunPrefixMethod(obj, method) {
 

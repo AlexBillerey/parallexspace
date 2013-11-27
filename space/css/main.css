@@ -27,93 +27,67 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow:hidden;
+    overflow: hidden;
 
 }
 
 @keyframes cloud99 {
     0% {
-        /*opacity: 0;*/
-        margin-left: -30em;
-        margin-top:-30em;
-        -webkit-transform: scale(0,0);
-        -moz-transform: scale(0,0);
-        transform:  scale(0,0);
-    }
-    25% {
-        /*opacity: .25;*/
-        margin-left: 25%;
-        margin-top:-5em;
-        -webkit-transform: scale(.25,.25);
-        -moz-transform: scale(.25,.25);
-        transform:  scale(.25,.25);
+        opacity: 0.1;
+        -webkit-transform: scale(10%,10%);
+        -moz-transform: scale(10%,10%);
+        -ms-transform: scale(10%,10%);
+        -o-transform: scale(10%,10%);
+        transform: scale(10%,10%);
     }
     50% {
-        /*opacity: .50;*/
-        margin-left: 50%;
-        -webkit-transform: scale(.5,.5);
-        -moz-transform: scale(.5,.5);
-        transform:  scale(1.5,1.5);
-    }
-    75% {
-        /*opacity: .75;*/
-        margin-left: 75%;
-        -webkit-transform: scale(1.75,1.75);
-        -moz-transform: scale(1.75,1.75);
-        transform:  scale(1.75,1.75);
+        opacity:.5;
+        -webkit-transform: scale(50%,50%);
+        -moz-transform: scale(50%,50%);
+        -ms-transform: scale(50%,50%);
+        -o-transform: scale(50%,50%);
+        transform: scale(50%,50%);
     }
 
     100% {
-        /*opacity: 1.0;*/
-        margin-left: 100%;
-        margin-top: 20em;
-        -webkit-transform: scale(2,2);
-        -moz-transform: scale(2,2);
-        transform:  scale(2,2);
+        opacity: 1.0;
+        -webkit-transform: scale(100%,100%);
+        -moz-transform: scale(100%,100%);
+        -ms-transform: scale(100%,100%);
+        -o-transform: scale(100%,100%);
+        transform: scale(100%,100%);
     }
-    }
+}
 
 @-webkit-keyframes cloud99 {
     0% {
-        /*opacity: 0;*/
-        margin-left: -30em;
-        margin-top:-30em;
+        opacity: 0;
         -webkit-transform: scale(0,0);
         -moz-transform: scale(0,0);
-        transform:  scale(0,0);
-    }
-    25% {
-        /*opacity: .25;*/
-        margin-left: 25%;
-        margin-top:-5em;
-        -webkit-transform: scale(.25,.25);
-        -moz-transform: scale(.25,.25);
-        transform:  scale(.25,.25);
+        -ms-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
     }
     50% {
-        /*opacity: .50;*/
-        margin-left: 50%;
-        -webkit-transform: scale(.5,.5);
-        -moz-transform: scale(.5,.5);
-        transform:  scale(1.5,1.5);
+        opacity:.5;
+        -webkit-transform: scale(4,4);
+        -moz-transform: scale(4,4);
+        -ms-transform: scale(4,4);
+        -o-transform: scale(4,4);
+        transform: scale(4,4);
     }
-    75% {
-        /*opacity: .75;*/
-        margin-left: 75%;
-        -webkit-transform: scale(1.75,1.75);
-        -moz-transform: scale(1.75,1.75);
-        transform:  scale(1.75,1.75);
-    }
+    
 
     100% {
-        /*opacity: 1.0;*/
-        margin-left: 100%;
-        margin-top: 20em;
-        -webkit-transform: scale(2,2);
-        -moz-transform: scale(2,2);
-        transform:  scale(2,2);
+        opacity: 1.0;
+        -webkit-transform: scale(8,8);
+        -moz-transform: scale(8,8);
+        -ms-transform: scale(8,8);
+        -o-transform: scale(8,8);
+        transform: scale(8,8);
+        
     }
-    }
+}
 
 #cloud99 {
     -webkit-animation-name: cloud99;
@@ -132,9 +106,12 @@ html {
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    /*margin-top: -10em;
-    margin-left:-10em;*/
     z-index: 2;
+    margin: 0;
+    -webkit-transform: translate(80%, 0);
+    -moz-transform: translate(80%, 0);
+    -ms-transform: translate(80%, 0);
+    -o-transform: translate(80%, 0);
 }
 
 /*
@@ -323,12 +300,12 @@ textarea {
     #controlPanel {
         background: rgba(255, 255, 255, 0.25);
         position: fixed;
-        width:auto;
-        height:auto;
-        padding:.2em .5em;
-        color:white;
-        font-weight:bold;
-        margin:0;
+        width: auto;
+        height: auto;
+        padding: .2em .5em;
+        color: white;
+        font-weight: bold;
+        margin: 0;
     }
 }
 
