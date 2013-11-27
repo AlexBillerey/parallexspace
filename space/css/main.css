@@ -33,29 +33,45 @@ html {
 
 @keyframes cloud99 {
     0% {
-        opacity: 0.1;
-        -webkit-transform: scale(10%,10%);
-        -moz-transform: scale(10%,10%);
-        -ms-transform: scale(10%,10%);
-        -o-transform: scale(10%,10%);
-        transform: scale(10%,10%);
+        opacity: 0;
+        -webkit-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    30% {
+        opacity:.35;
+        -webkit-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        -o-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5);
     }
     50% {
         opacity:.5;
-        -webkit-transform: scale(50%,50%);
-        -moz-transform: scale(50%,50%);
-        -ms-transform: scale(50%,50%);
-        -o-transform: scale(50%,50%);
-        transform: scale(50%,50%);
+        -webkit-transform: scale(2.75, 2.75);
+        -moz-transform: scale(2.75, 2.75);
+        -ms-transform: scale(2.75, 2.75);
+        -o-transform: scale(2.75, 2.75);
+        transform: scale(2.75, 2.75);
     }
+    75% {
+        -webkit-transform: scale(4.75,4.75);
+        -moz-transform: scale(4.75,4.75);
+        -ms-transform: scale(4.75,4.75);
+        -o-transform: scale(4.75,4.75);
+        transform: scale(4.75,4.75);
+    }
+
 
     100% {
         opacity: 1.0;
-        -webkit-transform: scale(100%,100%);
-        -moz-transform: scale(100%,100%);
-        -ms-transform: scale(100%,100%);
-        -o-transform: scale(100%,100%);
-        transform: scale(100%,100%);
+        -webkit-transform: scale(10,10);
+        -moz-transform: scale(10,10);
+        -ms-transform: scale(10,10);
+        -o-transform: scale(10,10);
+        transform: scale(10,10);
     }
 }
 
@@ -68,24 +84,38 @@ html {
         -o-transform: scale(0,0);
         transform: scale(0,0);
     }
+    30% {
+        opacity:.35;
+        -webkit-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        -o-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5);
+    }
     50% {
         opacity:.5;
-        -webkit-transform: scale(4,4);
-        -moz-transform: scale(4,4);
-        -ms-transform: scale(4,4);
-        -o-transform: scale(4,4);
-        transform: scale(4,4);
+        -webkit-transform: scale(2.75, 2.75);
+        -moz-transform: scale(2.75, 2.75);
+        -ms-transform: scale(2.75, 2.75);
+        -o-transform: scale(2.75, 2.75);
+        transform: scale(2.75, 2.75);
+    }
+    75% {
+        -webkit-transform: scale(4.75,4.75);
+        -moz-transform: scale(4.75,4.75);
+        -ms-transform: scale(4.75,4.75);
+        -o-transform: scale(4.75,4.75);
+        transform: scale(4.75,4.75);
     }
     
 
     100% {
         opacity: 1.0;
-        -webkit-transform: scale(8,8);
-        -moz-transform: scale(8,8);
-        -ms-transform: scale(8,8);
-        -o-transform: scale(8,8);
-        transform: scale(8,8);
-        
+        -webkit-transform: scale(10,10);
+        -moz-transform: scale(10,10);
+        -ms-transform: scale(10,10);
+        -o-transform: scale(10,10);
+        transform: scale(10,10);
     }
 }
 
@@ -108,10 +138,7 @@ html {
     animation-iteration-count: infinite;
     z-index: 2;
     margin: 0;
-    -webkit-transform: translate(80%, 0);
-    -moz-transform: translate(80%, 0);
-    -ms-transform: translate(80%, 0);
-    -o-transform: translate(80%, 0);
+    
 }
 
 /*
