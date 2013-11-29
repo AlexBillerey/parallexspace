@@ -41,12 +41,12 @@ html {
         transform: scale(0,0) translate(-25em,0,);
     }
     100% {
-        opacity: 0;
-        -webkit-transform: scale(10,10) translate(200%, 0);
-        -moz-transform: scale(10,10) translate(200%, 0);
-        -ms-transform: scale(10,10) translate(200%, 0);
-        -o-transform: scale(10,10) translate(200%, 0);
-        transform: scale(10,10) translate(200%, 0);
+        opacity: .5;
+        -webkit-transform: scale(15,15) translate(30em, 0);
+        -moz-transform: scale(15,15) translate(30em, 0);
+        -ms-transform: scale(15,15) translate(30em, 0);
+        -o-transform: scale(15,15) translate(30em, 0);
+        transform: scale(15,15) translate(30em, 0);
     }
 }
 
@@ -60,12 +60,12 @@ html {
         transform: scale(0,0) translate(-25em,0,);
     }
     100% {
-        opacity: 0;
-        -webkit-transform: scale(10,10) translate(200%, 0);
-        -moz-transform: scale(10,10) translate(200%, 0);
-        -ms-transform: scale(10,10) translate(200%, 0);
-        -o-transform: scale(10,10) translate(200%, 0);
-        transform: scale(10,10) translate(200%, 0);
+        opacity: .5;
+        -webkit-transform: scale(15,15) translate(30em, 0);
+        -moz-transform: scale(15,15) translate(30em, 0);
+        -ms-transform: scale(15,15) translate(30em, 0);
+        -o-transform: scale(15,15) translate(30em, 0);
+        transform: scale(15,15) translate(30em, 0);
     }
 }
 
@@ -74,10 +74,10 @@ html {
     -moz-animation-name: cloud99;
     -o-animation-name: cloud99;
     animation-name: cloud99;
-    -webkit-animation-duration: 8s;
-    -moz-animation-duration: 8s;
-    -o-animation-duration: 8s;
-    animation-duration: 8s;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    animation-duration: 20s;
     -webkit-animation-timing-function: ease-in;
     -moz-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
