@@ -33,65 +33,39 @@ html {
 
 @keyframes cloud99 {
     0% {
-        opacity: 0;
-        -webkit-transform: scale(0,0) translate(0,0,);
-        -moz-transform: scale(0,0) translate(0,0,);
-        -ms-transform: scale(0,0) translate(0,0,);
-        -o-transform: scale(0,0) translate(0,0,);
-        transform: scale(0,0) translate(0,0,);
+        opacity: 1;
+        -webkit-transform: scale(0,0) translate(-25em,0,);
+        -moz-transform: scale(0,0) translate(-25em,0,);
+        -ms-transform: scale(0,0) translate(-25em,0,);
+        -o-transform: scale(0,0) translate(-25em,0,);
+        transform: scale(0,0) translate(-25em,0,);
     }
-/*    30% {
-        opacity:.35;
-        -webkit-transform: scale(1.5, 1.5) translate(10%, 0);
-        -moz-transform: scale(1.5, 1.5) translate(10%, 0);
-        -ms-transform: scale(1.5, 1.5) translate(10%, 0);
-        -o-transform: scale(1.5, 1.5) translate(10%, 0);
-        transform: scale(1.5, 1.5) translate(10%, 0);
-    }
-    50% {
-        opacity:.5;
-        -webkit-transform: scale(3,3) translate(35%, 0);
-        -moz-transform: scale(3,3) translate(35%, 0);
-        -ms-transform: scale(3,3) translate(35%, 0);
-        -o-transform: scale(3,3) translate(35%, 0);
-        transform: scale(3,3) translate(35%, 0);
-    }
-    75% {
-        opacity:.75;
-        -webkit-transform: scale(4.75, 4.75) translate(150%, 0);
-        -moz-transform: scale(4.75, 4.75) translate(150%, 0);
-        -ms-transform: scale(4.75, 4.75) translate(150%, 0);
-        -o-transform: scale(4.75, 4.75) translate(150%, 0);
-        transform: scale(4.75, 4.75) translate(150%, 0);
-    }*/
-
-
     100% {
-        opacity: 1.0;
-        -webkit-transform: scale(10,10) translate(250%, 0);
-        -moz-transform: scale(10,10) translate(250%, 0);
-        -ms-transform: scale(10,10) translate(250%, 0);
-        -o-transform: scale(10,10) translate(250%, 0);
-        transform: scale(10,10) translate(250%, 0);
+        opacity: 0;
+        -webkit-transform: scale(10,10) translate(200%, 0);
+        -moz-transform: scale(10,10) translate(200%, 0);
+        -ms-transform: scale(10,10) translate(200%, 0);
+        -o-transform: scale(10,10) translate(200%, 0);
+        transform: scale(10,10) translate(200%, 0);
     }
 }
 
 @-webkit-keyframes cloud99 {
     0% {
-        opacity: 0;
-        -webkit-transform: scale(0,0) translate(0,0,);
-        -moz-transform: scale(0,0) translate(0,0,);
-        -ms-transform: scale(0,0) translate(0,0,);
-        -o-transform: scale(0,0) translate(0,0,);
-        transform: scale(0,0) translate(0,0,);
+        opacity: 1;
+        -webkit-transform: scale(0,0) translate(-25em,0,);
+        -moz-transform: scale(0,0) translate(-25em,0,);
+        -ms-transform: scale(0,0) translate(-25em,0,);
+        -o-transform: scale(0,0) translate(-25em,0,);
+        transform: scale(0,0) translate(-25em,0,);
     }
     100% {
-        opacity: 1.0;
-        -webkit-transform: scale(10,10) translate(250%, 0);
-        -moz-transform: scale(10,10) translate(250%, 0);
-        -ms-transform: scale(10,10) translate(250%, 0);
-        -o-transform: scale(10,10) translate(250%, 0);
-        transform: scale(10,10) translate(250%, 0);
+        opacity: 0;
+        -webkit-transform: scale(10,10) translate(200%, 0);
+        -moz-transform: scale(10,10) translate(200%, 0);
+        -ms-transform: scale(10,10) translate(200%, 0);
+        -o-transform: scale(10,10) translate(200%, 0);
+        transform: scale(10,10) translate(200%, 0);
     }
 }
 
@@ -100,20 +74,25 @@ html {
     -moz-animation-name: cloud99;
     -o-animation-name: cloud99;
     animation-name: cloud99;
-    -webkit-animation-duration: 25s;
-    -moz-animation-duration: 25s;
-    -o-animation-duration: 25s;
-    animation-duration: 25s;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     z-index: 2;
     margin: 0;
+    -webkit-transform: translate(-25em, 0);
+    -moz-transform: translate(-25em, 0);
+    -ms-transform: translate(-25em, 0);
+    -o-transform: translate(-25em, 0);
+    transform: translate(-25em, 0);
     
 }
 
