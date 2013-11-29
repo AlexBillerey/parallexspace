@@ -85,32 +85,6 @@ html {
         -o-transform: scale(0,0) translate(0,0,);
         transform: scale(0,0) translate(0,0,);
     }
-    /*30% {
-        opacity:.35;
-        -webkit-transform: scale(1.5, 1.5) translate(10%, 0);
-        -moz-transform: scale(1.5, 1.5) translate(10%, 0);
-        -ms-transform: scale(1.5, 1.5) translate(10%, 0);
-        -o-transform: scale(1.5, 1.5) translate(10%, 0);
-        transform: scale(1.5, 1.5) translate(10%, 0);
-    }
-    50% {
-        opacity:.5;
-        -webkit-transform: scale(3,3) translate(35%, 0);
-        -moz-transform: scale(3,3) translate(35%, 0);
-        -ms-transform: scale(3,3) translate(35%, 0);
-        -o-transform: scale(3,3) translate(35%, 0);
-        transform: scale(3,3) translate(35%, 0);
-    }
-    75% {
-        opacity:.75;
-        -webkit-transform: scale(4.75, 4.75) translate(150%, 0);
-        -moz-transform: scale(4.75, 4.75) translate(150%, 0);
-        -ms-transform: scale(4.75, 4.75) translate(150%, 0);
-        -o-transform: scale(4.75, 4.75) translate(150%, 0);
-        transform: scale(4.75, 4.75) translate(150%, 0);
-    }*/
-    
-
     100% {
         opacity: 1.0;
         -webkit-transform: scale(10,10) translate(250%, 0);
