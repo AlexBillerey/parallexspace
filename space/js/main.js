@@ -1,46 +1,46 @@
 function init() {
     var cp = document.createElement('div');
-    $('body').prepend(cp);
     var cpheader = document.createElement('p');
-    cpheader.id = 'controlPanel';
-    var cp_txt = document.createTextNode("Control Panel");
+    var visor_status = document.createElement('span');
+    var cp_visor = document.createTextNode("Visor:");
+    var visor_status_off = document.createTextNode('Off')
+    $('body').prepend(cp);
+    cp.id = 'controlPanel';
     $(cp).prepend(cpheader);
-    $(cpheader).prepend(cp_txt);
+    $(cpheader).prepend(cp_visor);
+    $(cpheader).append(visor_status);
+    $(visor_status).prepend(visor_status_off);
 
 }
 $(init);
-$(document).ready(function(){
-    $('#controlPanel').click(function(){
-        var pfx = ["webkit", "moz", "ms", "o", ""];
-        function RunPrefixMethod(obj, method) {
+$(document).ready(function () {
+    function showVisor() {
+        var visor = document.createElement('div');
+        visor.id = 'visor';
+        $('body').prepend(visor);
+        $(visor).animate({
+            height: "100vh"
+        }, 1000);
+    }
 
-            var p = 0, m, t;
-            while (p < pfx.length && !obj[m]) {
-                m = method;
-                if (pfx[p] == "") {
-                    m = m.substr(0,1).toLowerCase() + m.substr(1);
-                }
-                m = pfx[p] + m;
-                t = typeof obj[m];
-                if (t != "undefined") {
-                    pfx = [pfx[p]];
-                    return (t == "function" ? obj[m]() : obj[m]);
-                }
-                p++;
-            }
+    function remove_visor() {
+        $('#visor').animate({
+            height: 0
+        }, 1000, function () {
+            $('#visor').remove();
+        });
+    }
 
+    $('#controlPanel').click(function () {
+        $(this).find('span').toggleClass('on');
+        if ($('#controlPanel span').attr('class') == 'on') {
+            $('#controlPanel span').text('On');
+            showVisor();
         }
-        var e = document.getElementById("controlPanel");
-
-        e.onclick = function() {
-
-            if (RunPrefixMethod(document, "FullScreen") || RunPrefixMethod(document, "IsFullScreen")) {
-                RunPrefixMethod(document, "CancelFullScreen");
-            }
-            else {
-                RunPrefixMethod(e, "RequestFullScreen");
-            }
-
+        else {
+            $('#controlPanel span').text('Off');
+            remove_visor();
         }
+
     });
-})
+});
