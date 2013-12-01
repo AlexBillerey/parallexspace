@@ -19,7 +19,8 @@ $(document).ready(function () {
         visor.id = 'visor';
         $('body').prepend(visor);
         $(visor).animate({
-            height: "100vh"
+            //height: "100vh"
+            top:"0"
         }, 1000);
     }
 
