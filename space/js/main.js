@@ -3,7 +3,7 @@ function init() {
     var cpheader = document.createElement('p');
     var visor_status = document.createElement('span');
     var cp_visor = document.createTextNode("Visor:");
-    var visor_status_off = document.createTextNode('Off')
+    var visor_status_off = document.createTextNode('Off');
     $('body').prepend(cp);
     cp.id = 'controlPanel';
     $(cp).prepend(cpheader);
@@ -31,7 +31,7 @@ $(document).ready(function () {
         });
     }
 
-    $('#controlPanel').on('click',function () {
+    $('#controlPanel').on('click', function () {
         var txtSpan = $('#controlPanel span');
         $(txtSpan).toggleClass('on');
         if ($(txtSpan).attr('class') == 'on') {
