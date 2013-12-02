@@ -31,14 +31,15 @@ $(document).ready(function () {
         });
     }
 
-    $('#controlPanel').click(function () {
-        $(this).find('span').toggleClass('on');
-        if ($('#controlPanel span').attr('class') == 'on') {
-            $('#controlPanel span').text('On');
+    $('#controlPanel').on('click',function () {
+        var txtSpan = $('#controlPanel span');
+        $(txtSpan).toggleClass('on');
+        if ($(txtSpan).attr('class') == 'on') {
+            $(txtSpan).text('On');
             showVisor();
         }
         else {
-            $('#controlPanel span').text('Off');
+            $(txtSpan).text('Off');
             remove_visor();
         }
 
