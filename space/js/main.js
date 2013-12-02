@@ -19,15 +19,14 @@ $(document).ready(function () {
         visor.id = 'visor';
         $('body').prepend(visor);
         $(visor).animate({
-            //height: "100vh"
-            top:"0"
-        }, 1000);
+            height: "100vh"
+        }, 500);
     }
 
     function remove_visor() {
         $('#visor').animate({
             height: 0
-        }, 1000, function () {
+        }, 500, function () {
             $('#visor').remove();
         });
     }
